@@ -20,3 +20,5 @@ filterLetter("a", callback1, callback2)
 filterLetter("8", callback1, callback2)
 // should execute callback2
 */
+
+export const filterLetter = (arg, call, call2) => {};

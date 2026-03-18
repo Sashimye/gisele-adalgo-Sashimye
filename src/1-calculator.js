@@ -15,4 +15,19 @@ const operator = '+'
 
 calculator(x, y, operator) => return 5
 */
-export const calculator = (x, y, operator) => {};
+export const calculator = (x, y, operator) => {
+    if (typeof x !== "number" || typeof y !== "number") return "is empty";
+
+    switch (operator) {
+        case "+":
+            return x + y;
+        case "-":
+            return x - y;
+        case "*":
+            return x * y;
+        case "/":
+            return x / y;
+        default:
+            return `no operators`;
+    }
+};

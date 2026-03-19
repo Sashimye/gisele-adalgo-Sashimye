@@ -23,3 +23,5 @@ fibonacci(max) => return 0
 const max = 0
 fibonacci(max) => return []
 */
+
+export function fibonacci(max) {}

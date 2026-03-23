@@ -8,4 +8,3 @@
  * @param {string} message The message in which the text should be replaced
  * @returns {string} an updated message with every "pain au chocolat" replaced by "chocolatine"
  */
-export const chocolatine = (message) => {};

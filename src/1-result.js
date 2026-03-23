@@ -1,5 +1,5 @@
 export const calculator = (x, y, operator) => {
-    if (typeof x !== "number" || typeof y !== "number") return "is empty";
+    if (isNaN(x) || isNaN(y)) return "is empty";
 
     switch (operator) {
         case "+":

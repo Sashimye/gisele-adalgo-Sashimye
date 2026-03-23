@@ -1,26 +1,17 @@
-// TODO: test arrayToFrench function with one, two and multiple words
-import { arrayToFrench } from "./5-arrayToFrench";
 import { test, expect, describe } from "vitest";
+import { arrayToFrench } from "./5-arrayToFrench";
 
+// TODO: test arrayToFrench function with one, two and multiple words
 describe("arrayToFrench", () => {
-    test("Test arrayToFrench function with one word", () => {
-        expect(arrayToFrench(["Bonjour"])).toBe("Bonjour");
+    test("Test arrayToFrench with one word", () => {
+        expect(arrayToFrench(["un"])).toBe(" et un");
     });
-    test("Test arrayToFrench function with two words", () => {
-        expect(arrayToFrench(["Bonjour", "Clement"])).toBe(
-            "Bonjour et Clement",
-        );
+    test("Test arrayToFrench with two word", () => {
+        expect(arrayToFrench(["un", "deux"])).toBe("un et deux");
     });
-    test("Test arrayToFrench function with multiple words", () => {
-        expect(
-            arrayToFrench([
-                "Bonjour",
-                "Clement",
-                "Ravie",
-                "De",
-                "Te",
-                "Rencontrer",
-            ]),
+    test("Test arrayToFrench with multiple words", () => {
+        expect(arrayToFrench(["un", "deux", "trois", "soleil"])).toBe(
+            "un, deux, trois et soleil",
         );
     });
 });

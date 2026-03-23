@@ -24,4 +24,4 @@ const max = 0
 fibonacci(max) => return []
 */
 
-export function fibonacci(max) {}
+// 1, 1, 2, 3, 5, 8, 13, 21

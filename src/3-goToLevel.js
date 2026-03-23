@@ -17,4 +17,3 @@ const start = 3
 const end = 0
 goToLevel(startFloor, FinalPosition) => return -3
 */
-export const goToLevel = () => {};

@@ -17,5 +17,3 @@ ingly("playing") => return "playingly"
 
 ingly("swim") => return "swiming"
 */
-
-export const ingly = (word) => {};
